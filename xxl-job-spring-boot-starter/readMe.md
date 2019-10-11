@@ -70,11 +70,11 @@ public class TestJob extends IJobHandler{
 
 配置任务
 
-![1570794600345](C:/Users/hnoe-dev-tqd/AppData/Roaming/Typora/typora-user-images/1570794600345.png)
+![1570794600345](doc/image/add-task.png)
 
 配置完后,尝试执行一次.并确认执行成功(**注意:执行前记得运行你的程序**)
 
-![1570794658487](C:/Users/hnoe-dev-tqd/AppData/Roaming/Typora/typora-user-images/1570794658487.png)
+![1570794658487](doc/image/log.png)
 
 
 
