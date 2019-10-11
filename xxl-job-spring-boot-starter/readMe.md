@@ -64,7 +64,7 @@ public class TestJob extends IJobHandler{
 
 ## 配置执行器与任务
 
- 前往xxl-job-admin服务http://192.168.0.140:18889/xxl-job-admin,配置执行器,
+ 前往xxl-job-admin服务http://192.168.0.140:18889/xxl-job-admin,(用户名/密码:admin/123456)配置执行器,
 
 ![](./doc/image/add-executor.png)
 
