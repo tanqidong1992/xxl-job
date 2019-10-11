@@ -1,0 +1,11 @@
+xxl:
+  job:
+    accessToken: '123'
+    admin:
+      addresses: http://192.168.0.140:18889/xxl-job-admin/xxl-job-admin
+    executor:
+      appname: xxl-job-executor-sample
+      ip: 192.168.0.123
+      logpath: /data/applogs/xxl-job/jobhandler
+      logretentiondays: -1
+      port: 9999

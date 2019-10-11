@@ -1,0 +1,24 @@
+version: "2.4"
+networks:
+  hn-net-bridge:
+    external: true
+services:
+  xxl-job-1:
+    image: "xxl-job-admin:2.1.1-SNAPSHOT"
+    restart: "on-failure"
+    ports:
+    - "18888:80/tcp"
+    hostname: "1.xxl-job.hn"
+    dns:
+    - "192.168.0.140"
+    container_name: "xxl-job--1"
+    environment:
+      DB_USERNAME: "postgres"
+      DB_SERVER_PORT: "5432"
+      DB_SERVER_IP: "192.168.0.142"
+      DB_NAME: "hnvmns9000"
+      INSTANCE_ID: "4"
+      DB_PASSWORD: "Admin12345"
+    networks:
+    - "hn-net-bridge"
+    mem_limit: "4096M"

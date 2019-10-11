@@ -1,0 +1,47 @@
+mybatis:
+  mapper-locations: classpath:/mybatis-mapper-postgresql/*Mapper.xml
+server:
+  context-path: /xxl-job-admin
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: Admin12345
+    tomcat:
+      max-active: 30
+      max-wait: 10000
+      test-on-borrow: true
+      validation-interval: 30000
+      validation-query: SELECT 1
+    type: org.apache.tomcat.jdbc.pool.DataSource
+    url: jdbc:postgresql://192.168.0.142:5432/hnvmns9000?currentSchema=xxl_job
+    username: postgres
+  freemarker:
+    charset: UTF-8
+    request-context-attribute: request
+    settings:
+      number_format: 0.##########
+    suffix: .ftl
+    templateLoaderPath: classpath:/templates/
+  mail:
+    host: smtp.qq.com
+    password: xxx
+    port: 25
+    properties:
+      mail:
+        smtp:
+          auth: true
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+          starttls:
+            enable: true
+            required: true
+    username: xxx@qq.com
+  mvc:
+    static-path-pattern: /static/**
+  resources:
+    static-locations: classpath:/static/
+xxl:
+  job:
+    accessToken: ''
+    i18n: ''
