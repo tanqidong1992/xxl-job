@@ -45,3 +45,5 @@ xxl:
   job:
     accessToken: ''
     i18n: ''
+logging:
+  config: classpath:log4j2-docker.xml

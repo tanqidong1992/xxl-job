@@ -1,0 +1,1 @@
+2019-12-06 11:13:15.758 [xxl-job, admin JobRegistryMonitorHelper] WARN  org.apache.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 30
